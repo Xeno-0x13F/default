@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0,minimum-scale=1.0, maximum-scale=1, user-scalable=no">
+    <!-- タイトル -->
+    <title>マジカルミライ プロコン</title>
+    <link rel="stylesheet" type="text/css" href="main.css">
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    <script src="https://unpkg.com/textalive-app-api/dist/index.js"></script>
+</head>
+<body>
+  <!-- オーバーレイ / Overlay -->
+<div id="overlay">
+  </div>
+  
+  <!-- ヘッダ / Header -->
+  <div id="header">
+    <!-- 再生コントロール / Playback control -->
+    <div id="control" class="far">
+      <a href="#" id="play" class="disabled">▷</a>
+      <a href="#" id="stop" class="disabled">&#xf28d;</a>
+    </div>
+    <!-- アーティストと楽曲の情報 / Artist and song info -->
+    <div id="meta">
+      <div id="artist">artist: <span>-</span></div>
+      <div id="song">song: <span>-</span></div>
+    </div>
+  </div>
+  
+  <!-- 音源 / Audio souce -->
+  <div id="media"></div>
+  
+  <div class="flex_box">
+    
+    <!-- 歌詞 / Lyrics text -->
+    <div id="lyrics" class="lyrics">
+        <!-- 文字 / Text -->
+        <div id="text"></div>
+    </div>
+    <!-- 情報 / Information -->
+    <div id="infomation" class="infomation">
+        <!-- ここに内容 / Text -->
+        <div id="content" class="lyrics">
+          <div id="bito">ここにビート情報</div>
+          <div id="kodo">ここにコード進行</div>
+          <div id="sabi">サビ？</div>
+          <div>声量 : <span id="seiryo">ここに声量</span></div>
+        </div>
+    </div>
+
+  </div>
+  
+  <!-- シークバー -->
+  <div id="seekbar">
+    <div></div>
+  </div>
+  <script src="index.js"></script>
+    
+</body>
+
+</html>
